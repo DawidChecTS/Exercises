@@ -12,4 +12,9 @@ void initialMaker();
 void whatTheSize();
 void compareNumberWith10();
 void gotMilk();
+void feverCheck();
+void ageCheck();
+void ticketsPlease();
+void scandinaviaCheck();
+void fastFoodChoices();
 #endif

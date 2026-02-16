@@ -13,6 +13,11 @@ int main(void) {
     //initialMaker();
     //whatTheSize();
     //compareNumberWith10();
-    gotMilk();
+    //gotMilk();
+    //feverCheck();
+    //ageCheck();
+    //ticketsPlease();
+    //scandinaviaCheck();
+    fastFoodChoices();
     return 0;
 }

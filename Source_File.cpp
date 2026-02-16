@@ -1,5 +1,6 @@
 #include "Header_Source_File.h"
 #include <iostream>
+#include <set>
 
 // DATA TYPES
 
@@ -238,6 +239,26 @@ Ask the user to enter their temperature from a thermometer.
 If the temperature is above 39.5, print: “You should see a doctor.”
 Else if it is above 37.8, print: “You have a fever.”
 If the temperature is below or equal to 37.8, print: “You do not have a fever.”
+*/
+
+void feverCheck(){
+
+    double userTemp;
+
+    std::cout << "Enter their temperature from a thermometer: " << std::endl;
+    std::cin >> userTemp;
+
+    if(userTemp > 39.5){
+        std::cout << "You should see a doctor." << std::endl;
+    }
+    else if (userTemp > 37.8 && userTemp <= 39.5){
+        std::cout << "You have a fever." << std::endl;
+    }
+    else
+    std::cout << "You do not have a fever." << std::endl;
+}
+
+/*
 4. Age Check
 Ask the user to enter their age.
 
@@ -245,18 +266,75 @@ If the age is less than 18, print: “You are not an adult.”
 If the age is over 65, print: “You are a pensioner.”
 Otherwise, print: “You are an adult but not a pensioner.”
 Bonus Task: Check that the input is a valid number. If the user enters anything other than digits, print: “Invalid input. Please enter a valid age.”
+*/
 
+void ageCheck(){
+
+    double userAge;
+
+    std::cout << "Enter your age: " << std::endl;
+    std::cin >> userAge;
+
+    if(userAge < 18){
+        std::cout << "You are not an adult." << std::endl;
+    }
+    else if (userAge > 65){
+        std::cout << "You are a pensioner." << std::endl;
+    }
+    else
+    std::cout << "You are an adult but not a pensioner." << std::endl;
+}
+
+/*
 5. Tickets please!
 Ask the user to enter their category: adult, pensioner, or student.
 
 If the user is a pensioner or student, print: “The ticket costs 20 SEK.”
 If the user is an adult, print: “The ticket costs 30 SEK.”
 Otherwise, print: “Invalid category entered.”
+*/
+
+void ticketsPlease(){
+
+    double userAge;
+
+    std::cout << "Enter your age: " << std::endl;
+    std::cin >> userAge;
+
+    if(userAge < 18){
+        std::cout << "You are not an adult." << std::endl;
+    }
+    else if (userAge > 65){
+        std::cout << "You are a pensioner." << std::endl;
+    }
+    else
+    std::cout << "You are an adult but not a pensioner." << std::endl;
+}
+
+/*
 6. Scandinavia Check
 Ask the user to enter the name of the country they live in.
 
 If it is Sweden, Denmark, or Norway, print: “You live in Scandinavia.”
 Otherwise, print: “You do not live in Scandinavia.”
+*/
+
+void scandinaviaCheck(){
+
+    std::string userInput;
+    std::set<std::string> scandinavia = {"Sweden", "Denmark", "Norway"};
+
+    std::cout << "Enter the name of the country they live in: " << std::endl;
+    std::cin >> userInput;
+
+    if(scandinavia.count(userInput)){
+        std::cout << "You live in Scandinavia." << std::endl;
+    }
+    else
+    std::cout << "You dont live in Scandinavia." << std::endl;
+}
+
+/*
 7. Fast food choices
 Ask the user how much money they have and then ask if they have a discount.
 
@@ -267,7 +345,44 @@ If they have 15–25 (with discount) → “You can buy a small hamburger and fr
 If they have 26–50 (no discount) → “You can buy a large hamburger.”
 If they have 26–50 (with discount) → “You can buy a large hamburger and fries.”
 If they have more than 60, or between 50–60 with discount → “You can buy a meal with a drink.”
-Loops
+*/
+void fastFoodChoices(){
+
+    bool discountApplied;
+    double usersCash;
+    std::string doesUserHaveDiscount;
+
+    std::cout << "How much money do you have?: " << std::endl;
+    std::cin >> usersCash;
+
+    std::cout << "Do you have a discount?(y/n): " << std::endl;
+    std::cin >> doesUserHaveDiscount;
+
+    if (doesUserHaveDiscount == "y"){
+        discountApplied = true;
+    }
+    else
+    discountApplied = false;
+
+    if (!discountApplied && (usersCash > 15 && usersCash < 25)){
+        std::cout << "You can buy a small hamburger." << std::endl;
+    }
+    else if (discountApplied && (usersCash > 15 && usersCash < 25)){
+        std::cout << "You can buy a small hamburger and fries." << std::endl;
+    }
+    else if (!discountApplied && (usersCash > 26 && usersCash < 50)){
+        std::cout << "You can buy a large hamburger." << std::endl;
+    }
+    else if (discountApplied && (usersCash > 26 && usersCash < 50)){
+        std::cout << "You can buy a large hamburger and fries." << std::endl;
+    }
+    else if ((discountApplied && (usersCash > 50 && usersCash < 60)) || usersCash > 60){
+        std::cout << "You can buy a meal with a drink." << std::endl;
+    }
+
+}
+/*
+LOOPS
 1. Print Numbers 0 to 10
 Write a program that prints the numbers 0 to 10 on the screen. Solve this using a for-loop and then a while-loop
 
@@ -309,7 +424,7 @@ After each roll, ask the user: “Roll again (y/yes)?”
 
 Keep rolling until the user enters something other than “y” or “yes”.
 
-Harder exercises
+HARDER EXERCIES
 These are made to touch on all subjects we've learned this week. Make sure that all I/O operations are protected with try/catch.
 
 1. Make it secret
