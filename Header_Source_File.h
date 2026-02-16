@@ -17,4 +17,7 @@ void ageCheck();
 void ticketsPlease();
 void scandinaviaCheck();
 void fastFoodChoices();
+void printNumbers();
+void numbersBetweenTwoValues();
+void repeatUntilUserQuits();
 #endif

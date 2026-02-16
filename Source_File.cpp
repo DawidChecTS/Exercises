@@ -384,11 +384,54 @@ void fastFoodChoices(){
 /*
 LOOPS
 1. Print Numbers 0 to 10
-Write a program that prints the numbers 0 to 10 on the screen. Solve this using a for-loop and then a while-loop
+Write a program that prints the numbers 0 to 10 on the screen. 
+Solve this using a for-loop and then a while-loop */
 
+void printNumbers(){
+    
+    std::cout <<"Created by for loop." << std::endl;
+    for(int i = 1; i <=10; i++)
+    std::cout << i << " ";
+
+    std::cout << std::endl;
+    std::cout <<"Created by while loop." << std::endl;
+
+    int j = 1;
+    while (j <= 10){
+        std::cout << j << " ";
+        j++;
+    }
+}
+
+/*
 2. Numbers Between Two Values
-Ask the user to enter two numbers. Print all the numbers between those two values on the screen. Solve this using a for-loop and then a while-loop
+Ask the user to enter two numbers. Print all the numbers between those two values on the screen. 
+Solve this using a for-loop and then a while-loop
+*/
+void numbersBetweenTwoValues(){
+    int firstNumber;
+    int secondNumber;
 
+    std::cout << "Give me the first whole number: " << std::endl;
+    std::cin >> firstNumber;
+    std::cout << "Give me the second whole number: " << std::endl;
+    std::cin >> secondNumber;
+
+    std::cout <<"Created by for loop." << std::endl;
+    for(int i = firstNumber; i <=secondNumber; i++)
+    std::cout << i << " ";
+
+    std::cout << std::endl;
+    std::cout <<"Created by while loop." << std::endl;
+
+    int j = firstNumber;
+    while (j <= secondNumber){
+        std::cout << j << " ";
+        j++;
+    }
+}
+
+/*
 3. Repeat Until User Quits
 Ask the user to enter two numbers.
 
@@ -398,6 +441,32 @@ Then ask: “Do you want to continue (Y/N)?”
 
 If the user enters Y, repeat the steps.
 If the user enters N, stop the program.
+*/
+
+void repeatUntilUserQuits(){
+    std::string userInput;
+
+    std::cout << "Do you wish to play?(y/n): " << std::endl;
+    std::cin >> userInput;
+
+    while(userInput == "y")
+    { 
+        double a;
+        double b;
+
+        std::cout << "Give me the first number: " << std::endl;
+        std::cin >> a;
+        std::cout << "Give me the second number: " << std::endl;
+        std::cin >> b;
+        double sum = a + b;
+        std::cout << "A sum of a and b is: " << sum << std::endl;
+        std::cout << "Do you wish to play again? (y/n): " << std::endl;
+        std::cin >> userInput;
+    }
+}
+
+
+/*
 4. Sum of 10 Inputs
 Ask the user to enter a number. Repeat this 10 times, adding each input to a total.
 
@@ -424,7 +493,8 @@ After each roll, ask the user: “Roll again (y/yes)?”
 
 Keep rolling until the user enters something other than “y” or “yes”.
 
-HARDER EXERCIES
+
+//////////////HARDER EXERCIES/////////////
 These are made to touch on all subjects we've learned this week. Make sure that all I/O operations are protected with try/catch.
 
 1. Make it secret
