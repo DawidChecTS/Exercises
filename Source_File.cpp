@@ -1,7 +1,8 @@
 #include "Header_Source_File.h"
 #include <iostream>
 
-// Data Types
+// DATA TYPES
+
 // 1. Hello World
 // This is an ode to the original release of the K&R C book from the 70s. Create a program that prints out the universal greeting: "Hello, World".
 
@@ -101,7 +102,7 @@ void iAmVeryLoud(){
     std::getline(std::cin, UserInput);
 
     //Go through every character inside the string UserInput, and convert each one to uppercase.
-    for (char &ConvertedString  : UserInput)
+    for (char &ConvertedString : UserInput)
     {
         ConvertedString = std::toupper(ConvertedString);
     }
@@ -113,6 +114,33 @@ void iAmVeryLoud(){
 // You are about to loose in a wordfeud game, luckily your programming skills comes in handy. Write a program that takes in two words and the combines 
 // the first half of the first word with the second half of the second word.
 
+void wordFeudThis(){
+    std::string firstWord;
+    std::string secondWord;
+
+    std::cout << "Enter your first word: " << std::endl;
+    std::cin >> firstWord;
+
+    std::cout << "Enter your second word: " << std::endl;
+    std::cin >> secondWord;
+
+    // Finding midpoints
+    int mid1 = firstWord.length() / 2;
+    int mid2 = secondWord.length() / 2;
+
+    // First halv of the FirstWord
+    std::string firstHalv = firstWord.substr(0,mid1);
+
+    // First halv of the SecondWord
+    std::string secondHalv = secondWord.substr(mid2);
+
+    // Combining the two words
+    std::string combinedString = firstHalv + secondHalv;
+
+    std::cout << "The result is: " << combinedString <<std::endl;
+
+
+}
 // TO DO
 
 // 10. Initials maker
@@ -127,7 +155,7 @@ void iAmVeryLoud(){
 
 // TO DO
 
-// Control Statements
+// CONTROL STATEMENTS
 
 /*
 1. Compare a Number with 10

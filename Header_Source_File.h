@@ -7,5 +7,5 @@ void calculatorAddition();
 void calculatorDivision();
 void timeCalculator();
 void iAmVeryLoud();
-
+void wordFeudThis();
 #endif
