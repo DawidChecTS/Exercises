@@ -169,8 +169,18 @@ void initialMaker(){
 // 11. Whats the size?
 // Create a program that writes out the size of all the primitive data types we've talked about so far.
 
-
-// TO DO
+void whatTheSize(){
+    std::cout << "The size of int is: " << sizeof(int) << "bytes" << std::endl;
+    std::cout << "The size of unsign int is: " << sizeof(unsigned int) << "bytes" << std::endl;
+    std::cout << "The size of char is: " << sizeof(char) << "bytes" << std::endl;
+    std::cout << "The size of string is: " << sizeof(std::string) << "bytes" << std::endl;
+    std::cout << "The size of double is: " << sizeof(double) << "bytes" << std::endl;
+    std::cout << "The size of float is: " << sizeof(float) << "bytes" << std::endl;
+    std::cout << "The size of short is: " << sizeof(short) << "bytes" << std::endl;
+    std::cout << "The size of long is: " << sizeof(long) << "bytes" << std::endl;
+    std::cout << "The size of long long is: " << sizeof(long long) << "bytes" << std::endl;
+    std::cout << "The size of signed char is: " << sizeof(signed char) << "bytes" << std::endl;
+}
 
 // CONTROL STATEMENTS
 

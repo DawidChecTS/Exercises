@@ -10,6 +10,7 @@ int main(void) {
     //timeCalculator();
     //iAmVeryLoud();
     //wordFeudThis();
-    initialMaker();
+    //initialMaker();
+    whatTheSize();
     return 0;
 }

@@ -9,4 +9,5 @@ void timeCalculator();
 void iAmVeryLoud();
 void wordFeudThis();
 void initialMaker();
+void whatTheSize();
 #endif
