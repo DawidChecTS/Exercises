@@ -10,4 +10,5 @@ void iAmVeryLoud();
 void wordFeudThis();
 void initialMaker();
 void whatTheSize();
+void compareNumberWith10();
 #endif

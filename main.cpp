@@ -11,6 +11,7 @@ int main(void) {
     //iAmVeryLoud();
     //wordFeudThis();
     //initialMaker();
-    whatTheSize();
+    //whatTheSize();
+    compareNumberWith10();
     return 0;
 }

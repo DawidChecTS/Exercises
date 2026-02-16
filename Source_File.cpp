@@ -190,6 +190,24 @@ Ask the user to enter a number.
 
 If the number is greater than 10, print: “The number is greater than 10.”
 If the number is less than 10, print: “The number is less than 10.”
+*/
+
+void compareNumberWith10(){
+    double userNumber;
+
+    std::cout << "Enter your number and I will compare it with 10: " << std::endl;
+    std::cin >> userNumber;
+
+    if(userNumber > 10){
+        std::cout << "The number is greater than 10." << std::endl;
+    }
+    else if (userNumber < 10){
+        std::cout << "The number is less than 10." << std::endl;
+    }
+}
+
+
+/*
 2. Got milk?
 Ask the user how many milk cartons are left.
 
