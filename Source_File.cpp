@@ -214,6 +214,24 @@ Ask the user how many milk cartons are left.
 If the number is less than 10, print: "Order 30 cartons.”
 If the number is between 10 and 20 (inclusive), print: “Order 20 cartons.”
 Otherwise, print: “You don’t need to order any milk.”
+*/
+void gotMilk(){
+    int milkCartonsLeft;
+
+    std::cout << "how many milk cartons are left?: " << std::endl;
+    std::cin >> milkCartonsLeft;
+
+    if(milkCartonsLeft < 10){
+        std::cout << "Order 30 cartons." << std::endl;
+    }
+    else if (milkCartonsLeft >= 10 && milkCartonsLeft <= 20){
+        std::cout << "Order 20 cartons." << std::endl;
+    }
+    else
+    std::cout << "You dont need to order any milk." << std::endl;
+}
+
+/*
 3. Fever Check
 Ask the user to enter their temperature from a thermometer.
 

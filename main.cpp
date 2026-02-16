@@ -12,6 +12,7 @@ int main(void) {
     //wordFeudThis();
     //initialMaker();
     //whatTheSize();
-    compareNumberWith10();
+    //compareNumberWith10();
+    gotMilk();
     return 0;
 }
