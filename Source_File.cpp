@@ -138,16 +138,33 @@ void wordFeudThis(){
     std::string combinedString = firstHalv + secondHalv;
 
     std::cout << "The result is: " << combinedString <<std::endl;
-
-
 }
-// TO DO
 
 // 10. Initials maker
 // Everything is in such a hurry, we need you to be named after your initials from now on. 
 // Make a program that takes in your full name and then prints out your initials.
 
-// TO DO
+void initialMaker(){
+    std::string name;
+    std::string surname;
+
+    std::cout << "Enter your first word: " << std::endl;
+    std::cin >> name;
+
+    std::cout << "Enter your second word: " << std::endl;
+    std::cin >> surname;
+
+    // First halv of the FirstWord
+    std::string firstInitial = name.substr(0, 1);
+
+    // First halv of the SecondWord
+    std::string secondInitial = surname.substr(0, 2);
+
+    // Combining the two words
+    std::string initials = firstInitial + secondInitial;
+
+    std::cout << "Your Initial are: " << initials <<std::endl;
+}
 
 // 11. Whats the size?
 // Create a program that writes out the size of all the primitive data types we've talked about so far.

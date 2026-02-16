@@ -8,4 +8,5 @@ void calculatorDivision();
 void timeCalculator();
 void iAmVeryLoud();
 void wordFeudThis();
+void initialMaker();
 #endif

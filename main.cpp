@@ -10,5 +10,6 @@ int main(void) {
     //timeCalculator();
     //iAmVeryLoud();
     //wordFeudThis();
+    initialMaker();
     return 0;
 }
