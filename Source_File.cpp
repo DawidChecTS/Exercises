@@ -488,12 +488,11 @@ void sumOf10Inputs(){
         // put a number into the vector
         numbers.push_back(userInput);
 
-        // calculate the numbers stored in vector
-
         // Calculate the number of loops
         numberOfInputs++;
     }
-    
+
+    // calculate the numbers stored in vector
     for(int n : numbers) {
     sum +=n;
     }
@@ -503,26 +502,63 @@ void sumOf10Inputs(){
 /*
 5. Temperature Alarm
 Continuously ask the user to enter temperature values.
-
 Calculate the average of the last three values entered.
-
 If the average is greater than 25, print: “Alarm!”
+*/
 
+/*
 6. Numbers Less Than Input
 Ask the user to enter a number.
 
 Print all the numbers that are greater than 0 but less than the entered number.
 
 Solve this using a loop.
+*/
 
+void numberLessThanInput(){
+    int usersNumber;
+
+    std::cout << "Enter your number: " << std::endl;
+    std::cin >> usersNumber;
+
+    for(int i = 0; i < usersNumber; i++)
+    std::cout << i << std::endl;
+}
+
+/*
 7. Rolling Dice
 Simulate rolling two dice and display the result.
 
 After each roll, ask the user: “Roll again (y/yes)?”
 
 Keep rolling until the user enters something other than “y” or “yes”.
+*/
+
+void rollingDice(){
+    std::string choice;
+
+    std::cout << "Do you wish to play Rolling Dice?(y/n): " << std::endl;
+    std::cin >> choice;
+
+    while(choice == "y"){
+    
+    int firstDice = std::rand() % 6 + 1;
+    std::cout << "Your first dice has rolled: " << firstDice << std::endl;
+    int secondDice = std::rand() % 6 + 1;
+    std::cout << "Your first dice has rolled: " << secondDice << std::endl;
+    
+    std::cout << "Roll again?(y/n): " << std::endl;
+    std::cin >> choice;
+
+    if (choice != "y"){
+        break;
+    }
+    }
+
+}
 
 
+/*
 //////////////HARDER EXERCIES/////////////
 These are made to touch on all subjects we've learned this week. Make sure that all I/O operations are protected with try/catch.
 

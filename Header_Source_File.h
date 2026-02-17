@@ -21,4 +21,7 @@ void printNumbers();
 void numbersBetweenTwoValues();
 void repeatUntilUserQuits();
 void sumOf10Inputs();
+void temperatureAlarm();
+void numberLessThanInput();
+void rollingDice();
 #endif

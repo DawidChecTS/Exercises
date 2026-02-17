@@ -22,6 +22,8 @@ int main(void) {
     //printNumbers();
     //numbersBetweenTwoValues();
     //repeatUntilUserQuits();
-    sumOf10Inputs();
+    //sumOf10Inputs();
+    //numberLessThanInput();
+    rollingDice();
     return 0;
 }
