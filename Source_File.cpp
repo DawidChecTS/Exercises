@@ -1,6 +1,9 @@
 #include "Header_Source_File.h"
 #include <iostream>
 #include <set>
+#include <vector>
+
+// dir path for UCRT64: /c/Users/checd/OneDrive/Pulpit/Excercies/Week.1
 
 // DATA TYPES
 
@@ -465,13 +468,39 @@ void repeatUntilUserQuits(){
     }
 }
 
-
 /*
 4. Sum of 10 Inputs
 Ask the user to enter a number. Repeat this 10 times, adding each input to a total.
+After all inputs, print: “The sum of the numbers you entered is: [total].
+*/
+void sumOf10Inputs(){
 
-After all inputs, print: “The sum of the numbers you entered is: [total].”
+    int userInput;
+    int numberOfInputs = 0;
+    // vector to store the integers
+    std::vector<int> numbers;
+    int sum = 0;
 
+    while(numberOfInputs < 10)
+    { 
+        std::cout << "Give me a number: "<< std::endl;
+        std::cin >> userInput;
+        // put a number into the vector
+        numbers.push_back(userInput);
+
+        // calculate the numbers stored in vector
+
+        // Calculate the number of loops
+        numberOfInputs++;
+    }
+    
+    for(int n : numbers) {
+    sum +=n;
+    }
+    std::cout << "The sum of the numbers you entered is: " << sum << std::endl;
+}
+
+/*
 5. Temperature Alarm
 Continuously ask the user to enter temperature values.
 

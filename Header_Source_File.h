@@ -20,4 +20,5 @@ void fastFoodChoices();
 void printNumbers();
 void numbersBetweenTwoValues();
 void repeatUntilUserQuits();
+void sumOf10Inputs();
 #endif

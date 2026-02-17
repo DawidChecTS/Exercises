@@ -21,6 +21,7 @@ int main(void) {
     //fastFoodChoices();
     //printNumbers();
     //numbersBetweenTwoValues();
-    repeatUntilUserQuits();
+    //repeatUntilUserQuits();
+    sumOf10Inputs();
     return 0;
 }
